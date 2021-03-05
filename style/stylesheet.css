@@ -15,7 +15,6 @@
 /*Header*/
 
 header{
-   
     margin-top: 5%;
     margin-left: 5%;
     margin-right: 5%;
@@ -26,6 +25,7 @@ header{
 /*Logo et navigateur*/
 
 .entete{
+
     display: flex;
     justify-content: space-between;
 }
@@ -33,7 +33,7 @@ header{
 /*Logo*/
 .logo img{
     width: auto;
-    height: 50px;
+    height: 40px;
     display: flex;
     padding: 0;
 }
@@ -42,12 +42,10 @@ header{
     width : 120px;
     text-align: center;
 }
-nav{  
-    font-weight: bold;
-}
 nav ul{
     list-style-type: none;
-    font-size: small;
+    font-size: 0.8em ;
+    font-weight: bolder;
     display: flex;
     justify-content: flex-end;
 }
@@ -75,7 +73,7 @@ a{
 
 /*Titres*/
 h1{
-    font-weight: bold;
+    font-weight: bolder;
     font-size: large;
     margin-bottom: 0mm;
 }
@@ -83,7 +81,7 @@ h1{
 h2{
     font-weight: lighter;
     font-size: small;
-    margin-top: 0mm;
+    margin-top: 0.5%;
 }
  /*Boutons recherche*/
 
@@ -158,7 +156,6 @@ form i{
 h3{
     font-weight: bolder;
     display: flex;
-    justify-content: center;
     margin: 0;
 }
 .filtre i{
@@ -219,11 +216,12 @@ h3{
 /*Main*/
 
 main{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  
     margin-left: 5%;
     margin-right: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;  
 }
 
 /*Blocs Hébergements et Populaires*/
@@ -232,7 +230,7 @@ main{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 3%;
+    margin-top: 2%;
 }
 
 /*Section Hébergement*/
@@ -297,6 +295,8 @@ margin-left: 3%;
     text-align: left; 
     display: flex;
     flex-direction: column;
+    width: auto;
+    height: auto;
 }
 .hotel{
     margin-top: 0%;
@@ -339,6 +339,7 @@ margin-left: 3%;
     flex-direction: row;
     justify-content: space-between;
     padding-top: 5%;
+    padding-bottom: 2%;
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -357,8 +358,6 @@ margin-left: 3%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 3%;
-    margin-right: 2%;
 }
 .el1{
     width: 80%;
@@ -369,20 +368,26 @@ margin-left: 3%;
     font-size: small;
     display: flex;
     margin-bottom: 10%;   
+    text-decoration: none;
+    display: flex;
 }
 .el1 img{
-    width: 145px;
+    width: 50%;
     height: 95%;
     border: 1px solid transparent;
     border-radius: 15px 0px 0px 15px; 
     padding-top: 2px;
     padding-left: 2px;
-    padding-right: 15px;
+    padding-right: 4%;
     padding-bottom: 2px; 
     object-fit: cover;
 }
+.el1:hover{
+    text-decoration: none;
+}
 
 /*Texte et étoiles*/
+
 .asidedesc{
     font-size: small; 
     color: black;
@@ -392,13 +397,8 @@ margin-left: 3%;
     margin: 0%;
     display: flex;
     flex-direction: column;
-}
-.el1{
-    text-decoration: none;
-    display: flex;
-}
-.el1:hover{
-    text-decoration: none;
+    width: auto;
+    height: auto;
 }
 .hotel{
     margin-top: 3%;
@@ -408,7 +408,7 @@ margin-left: 3%;
     margin-top: 5%;
 }
 .etoile1{
-    padding-top: 25%;
+    padding-top: 20%;
     color: #0065FC; 
     display: flex;
     flex-direction: row;
@@ -495,8 +495,11 @@ height: 145px;
 /*Footer*/
 
 footer{
+    width: 100%;
+    margin: 0;
     display: flex;     
     background-color: #F2F2F2 ;
+    margin-right: 5%;
     font-size: small;
     padding-top: 1%;
  }
@@ -538,47 +541,66 @@ footer{
 }
 ul {
     list-style-type: none;
-
+}
 
 /*Pour téléphone*/
 
 @media (max-width: 375px){
+
+/*Header*/
+
     header{
         width: auto;   
         margin: 5%;
     }
     
-    /*Logo*/
+/*Logo*/
     
     .logo img{
         height: 40px;
     }
-    .entete{
-      
+    .logo p{
+        margin-bottom: 0%;
     }
     
-    /*Navigateur*/
+/*Navigateur*/
     
     #trait_dessus{
         border-top: none;
-        
+        border-bottom: 1px solid #0065FC; 
+        width : 200px;
+        text-align: center;  
+        margin-left: 10%;
     }
     #trait_dessous{
         border-bottom : 1px solid #F2F2F2;
-        width : 120px;
+        width : 180px;
         text-align: center;
     }
     nav{
         display: flex;
         flex-wrap: wrap;
     }
+    nav ul{
+        height: 150px;
+        justify-content: center;
+        align-items: center;
+    }
+    nav li {
+        padding-inline-start: 0px;
+    }
+   
     .hebact{
         display: flex;   
-        margin: 0;
-        padding: 0;
+        margin-left: -150px;
+        margin-bottom: 10%;
+    }
+    .inscrire{
+        margin-left: 30%;
+        margin-bottom: 15%;
     }
     ul{
-        flex-flow: wrap-reverse;
+        flex-flow: column-reverse;
         margin: 0;
         padding: 0;
     }
@@ -588,12 +610,13 @@ ul {
     h1{
         width: 250px; /* à modifier selon besoins */
         overflow: hidden;
+        margin-top: 0%;
     }
     h2{
         margin-top: 2%;
     }
     
-    /*Bouton recherche*/
+/*Bouton recherche*/
     
     .recherche{
         display: none;
@@ -645,20 +668,23 @@ ul {
         display: flex;
         align-items: center; 
     }
-    /*Filtres*/
+
+/*Filtres*/
+
     .filtre{
+        display: flex;
         flex-wrap: wrap;
     }
     .filtersDiv{
         margin-top: 3%;
     }
-    h3{
+    h3{  
         width: 175px; /* à modifier selon besoins */
         overflow: hidden;
         margin-bottom: 3%;    
     }
 
-    /*Blocs hébérgement et populaires*/
+/*Blocs hébérgement et populaires*/
 
     main{
         margin: 5%;
@@ -671,29 +697,29 @@ ul {
         margin: 0;    
     }
     
-    /*Bloc populaires*/
+/*Bloc populaires*/
     
     .populaires{   
         width: 100%; 
         border-radius: 0px;
     }
     .bloc2{
-        height: auto;
-     
+        height: auto; 
     }
-    .el1{
-        width: 90%;
-    }   
+     
+    .etoile1{
+        margin-top: 0;
+    } 
     
-    /*Bloc hébergements*/
+/*Bloc hébergements*/
     
     .hebergement{
         margin-top: 10%;
+        width: 100%;
+        height: auto;
         border: transparent;
         background-color:transparent;
         border-radius: 0;
-        width: 100%;
-        height: auto;
     }
     .bloc1{
         height: auto;
@@ -707,7 +733,7 @@ ul {
         margin-left: 0;
     }
     
-    /*Bloc activités*/
+/*Bloc activités*/
     
     .activ{
         height: auto;  
@@ -781,7 +807,8 @@ ul {
         width: 100%;
     }
     
-    /*Footer*/
+/*Footer*/
+
     footer{
         width: auto;
         height: auto;
@@ -790,57 +817,52 @@ ul {
         margin-left: 5%;
         margin-bottom: 5%;
     }
+    .propos2{
+        margin-left: 5%;
+    }
+    .propos3{
+        margin-left: 5%;
+    }
 }
-
 
 /*Pour mobiles*/
-@media (min-width: 375px) and (max-width: 667px){
-    header{
-        width: auto;   
+
+@media (min-width: 376px) and (max-width: 768px){
+
+/*Body*/
+
+    body{
+        margin: 3%;
     }
-    
-    /*Logo*/
-    
-    .logo img{
-        height: 40px;
+
+/*Navigateur*/
+
+    nav{
+        margin-top: 4%;   
     }
-    .entete{
-      
+    ul{
+        display: flex;
+        flex-flow: wrap-reverse;
+        padding: 0;   
+        margin: 0; 
     }
-    
-    /*Navigateur*/
-    
-    #trait_dessus{
-        border-top: none;
-      
+    .hebact{
+        margin-top: 10%;
+        margin-right: 15%;
+    }
+    .inscrire{
+        margin-top: 5%;
+        margin-right: 20%;
+        display: flex;
+        justify-content: left;
     }
     #trait_dessous{
-        border-bottom : 1px solid #F2F2F2;
+        border-top : 1px solid #F2F2F2;
         width : 120px;
         text-align: center;
     }
-    nav{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .hebact{
-        display: flex;   
-    }
-    ul{
-        flex-flow: wrap-reverse;
-    }
-    li{
-        padding: 0;
-    }
-    h1{
-        width: 250px; /* à modifier selon besoins */
-        overflow: hidden;
-    }
-    h2{
-        margin-top: 2%;
-    }
     
-    /*Bouton recherche*/
+/*Bouton recherche*/
     
     .recherche{
         display: none;
@@ -892,33 +914,38 @@ ul {
         display: flex;
         align-items: center; 
     }
-    /*Filtres*/
+
+/*Filtres*/
+
     .filtre{
+        display: flex;
         flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
     }
     .filtersDiv{
         margin-top: 3%;
     }
-    
-    h3{
-        width: 175px; /* à modifier selon besoins */
-        overflow: hidden;
-        margin-bottom: 3%;    
+    h3{  
+        margin-top: 3%;
+         
     }
-    
-    /*Blocs hébérgement et populaires*/
-    main{
-        margin: 5%;
-        width: auto;
-        height: auto;
+
+/*Titre*/
+
+    h1{
+        margin-top: 8%;
+        margin-bottom: 2%;
     }
-    .bloc1bloc2{ 
+
+/*Blocs Hébéregements et Populaires*/
+
+    .bloc1bloc2{
         display: flex;
-        flex-direction: column-reverse;
-        margin: 0;    
+        flex-flow: column-reverse;
     }
-    
-    /*Bloc populaires*/
+
+/*Populaires*/
     
     .populaires{   
         width: 100%; 
@@ -926,36 +953,60 @@ ul {
     }
     .bloc2{
         height: auto;
-     
+    }
+    .pop{
+        font-size: 0.8em;
     }
     .el1{
         width: 90%;
-    }   
-    
-    /*Bloc hébergements*/
-    
+    }
+
+/*Hébergements*/
+
     .hebergement{
         margin-top: 10%;
-        border: transparent;
-        background-color:transparent;
+        padding-top: 8%;
+        border: 2px solid #F2F2F2;
+        background-color: #F2F2F2;
         border-radius: 0;
         width: 100%;
-        height: auto;
+        height: auto;    
     }
     .bloc1{
         height: auto;
     }
-    .el{
-        margin-top: 5%;
-        width: 100%;
+    #hebergements{
+        font-size: 0.8em;
+        margin-left: 10%;
     }
     .afficher{
-        margin-top: 10%;
+        font-size: 0.8em;
+        padding-left: 10%;
+    }
+    .el{
+        margin-top: 5%;
+        width: 80%;
+    }
+    .hotel{
+        margin-top: 2%;
+    }
+    .prix{
+        width: auto;
+        height: auto;
+        margin-top: 1%;
+        margin-bottom: 2%;
+        
+    }
+    .afficher{
+        margin-top: 3%;
+        margin-bottom: 3%;
         margin-left: 0;
     }
-    
     /*Bloc activités*/
-    
+
+    #activites{
+        margin-bottom: 0;
+    }
     .activ{
         height: auto;  
         margin-top: 10%; 
@@ -1022,43 +1073,61 @@ ul {
         height: 145px;
     }
     .etroit img{
-     
         height: 145px;
     }
     a img{
         width: 100%;
     }
     
-    /*Footer*/
+/*Footer*/
+
     footer{
-        width: auto;
+        width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
+        margin-top: 10%;
+        margin-bottom: 3%;    
+    }
+    h4{
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+    .propos1{
+        margin-bottom: 0%;
+    }
+    .propos1 p{
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+    .propos2{
         margin-left: 5%;
-        margin-bottom: 5%;
+    }
+    .propos2 p{
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+    .propos3{
+        margin-left: 5%;
+    }
+    .propos3 p{
+        margin-top: 1%;
+        margin-bottom: 1%;
     }
 }
-
 /*Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 667px à 1024px*/
-@media (min-width: 667px) and (max-width: 1024px){
+@media (min-width: 769px) and (max-width: 1024px){
     header{
         width: auto;   
     }
-    
-    /*Logo*/
-    
-    .logo img{
-        height: 40px;
-    }
-    .entete{
-      
-    }
-    
+   
     /*Navigateur*/
-    
+   
     #trait_dessus{
-        border-top: none;   
+        border-top: none; 
+        border-bottom : 1px solid #0065FC;
+        width : 120px;
+        text-align: center;
     }
     #trait_dessous{
         border-bottom : 1px solid #F2F2F2;
@@ -1066,51 +1135,33 @@ ul {
         text-align: center;
     }
     nav{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .hebact{
-        display: flex; 
-        margin: 0;
-        padding: 0;  
-    }
-    ul{
-        flex-flow: wrap-reverse;
-        margin: 0;
-        padding: 0;
-    }
-    li{
-        padding: 0;
-    }
-    h1{
-        width: 250px; /* à modifier selon besoins */
-        overflow: hidden;
+        margin-top: 3%;
     }
     h2{
-        margin-top: 2%;
+        margin-top: 1%;
+        margin-bottom: 5%;
     }
-    
+  
     /*Bouton recherche*/
     
     .recherche{
-        display: none;
+        display: flex;
     }
     .variante{
-        display: flex;
+        display: none;
     }
 
     /*Filtres*/
 
     .filtre{
+        display: flex;
         flex-wrap: wrap;
     }
     .filtersDiv{
         margin-top: 3%;
     }
     h3{
-        width: 175px; /* à modifier selon besoins */
-        overflow: hidden;
-        margin-bottom: 3%;    
+        margin-top: 3%
     }
     
     /*Blocs hébérgement et populaires*/
@@ -1129,168 +1180,56 @@ ul {
     /*Bloc populaires*/
     
     .populaires{   
-        width: 100%; 
+        width: 80%; 
         border-radius: 0px;
-    }
-    .bloc2{
-        height: auto;
-     
     }
     .el1{
         width: 90%;
-    }   
-    
+        margin-bottom: 3%;
+    }  
+
     /*Bloc hébergements*/
     
     .hebergement{
-        margin-top: 10%;
-        border: transparent;
-        background-color:transparent;
-        border-radius: 0;
-        width: 100%;
-        height: auto;
-    }
-    .bloc1{
-        height: auto;
-    }
-    .el{
         margin-top: 5%;
-        width: 100%;
+        width: auto;  
     }
     
     /*Bloc activités*/
     
-    .activ{
-        height: auto;  
-        margin-top: 10%; 
+    #activites{
+        margin-top: 2%;
+        margin-bottom: 2%;
     }
-    .bloc3{
-        width: 100%;
-        height: auto;
-        display: flex; 
-        flex-direction: column;   
+    .text{
+        font-size: 0.6em;
     }
-    .ensemble1{
-        display:contents;
-        width: 100%;
-    }
-    .ensemble2{
-        display:contents;
-        width: 100%;
-    }
-    .grand{
-        width: 100%;
-        margin-top: 10%;
-    }
-    
-    .moyen{
-        margin-top: 10%;
-        width: 100%;
-        height: auto;
-        border: 1px solid transparent;
-        border-radius: 20px 20px 20px 20px;
-        box-shadow: 0px 10px 10px #F2F2F2;
-        margin-right: 3%;
-    }
-    .etroit{
-        margin-top: 10%;
-        width: 100%;
-        height: auto;
-        border: 1px solid transparent;
-        border-radius: 20px 20px 20px 20px;
-        box-shadow: 0px 10px 10px #F2F2F2;
-        margin-right: 3%;
-    }
-    .eglise{
-        margin-top: 10%;
-        width: 100%;
-        height: auto;
-        border: 1px solid transparent;
-        border-radius: 20px 20px 20px 20px;
-        box-shadow: 0px 10px 10px #F2F2F2;
-        margin-right: 3%;
-    }
-    .parc{
-        margin-top: 10%;
-        width: 100%;
-        height: auto;
-        border: 1px solid transparent;
-        border-radius: 20px 20px 20px 20px;
-        box-shadow: 0px 10px 10px #F2F2F2;
-        margin-right: 3%;
-    }
-    .grand img{
-        height: 145px;
-    }
-    .moyen img{
-        height: 145px;
-    }
-    .etroit img{
-     
-        height: 145px;
-    }
-    a img{
-        width: 100%;
-    }
-    
+   
     /*Footer*/
     footer{
         width: auto;
         height: auto;
         display: flex;
-        flex-direction: column;
         margin-left: 5%;
+        margin-right: 5%;
         margin-bottom: 5%;
     }
 }
 
 /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1366px */
-@media (min-width: 1024px) and (max-width: 1366px){
+@media (min-width: 1025px) and (max-width: 1439px){
     header{
         width: auto;   
     }
-    
-    /*Logo*/
-    
-    .logo img{
-        height: 40px;
-    }
-    .entete{
-        display: flex;
-        flex-direction: column;
-    }
-    
+   
     /*Navigateur*/
     
-    #trait_dessus{
-        border-top: none;
-        border-bottom : 1px solid #0065FC;
-    }
     #trait_dessous{
-        border-bottom : 1px solid #F2F2F2;
+        border-top : 1px solid #F2F2F2;
         width : 120px;
         text-align: center;
     }
-    nav{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .hebact{
-        display: flex;   
-    }
-    ul{
-        flex-flow: wrap-reverse;
-    }
-    
-    h1{
-        width: 250px; /* à modifier selon besoins */
-        overflow: hidden;
-    }
-    h2{
-        margin-top: 2%;
-    }
-    
-    /*Bouton recherche*/
+      /*Bouton recherche*/
     
     .recherche{
         display: flex;
@@ -1298,36 +1237,40 @@ ul {
     .variante{
         display: none;
     }
-   
 
     /*Filtres*/
 
-    .filtre{
-        flex-wrap: wrap;
-    }
+    
     .filtersDiv{
         margin-top: 3%;
     }
     h3{
-        width: 175px; /* à modifier selon besoins */
-        overflow: hidden;
-        margin-bottom: 3%;    
+        margin-top: 3%;
+    }
+    .info i{
+        margin-top: 2%;
+    }
+    .info p{
+        margin-bottom: 0;
     }
     
     /*Blocs hébérgement et populaires*/
+
     main{
-        margin: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
         width: auto;
         height: auto;
     }
-    .bloc1bloc2{ 
-        display: flex;
-        margin: 0;    
+    .bloc1bloc2{
+        width: auto;
+        height: auto;
     }
      /*Bloc hébergements*/
     
-     .hebergement{
-        margin-top: 10%;
+    .hebergement{
+        margin-top: 2%;
+        padding-top: 0;
         border: transparent;
         background-color:transparent;
         border-radius: 0;
@@ -1335,110 +1278,56 @@ ul {
         height: auto;
     }
     .bloc1{
+        width: 100%;
         height: auto;
+        margin-top: 5%;
     }
     .el{
-        margin-top: 5%;
-        width: 100%;
+        width: 35%;
+        height: 180px; 
+        margin-bottom: 3%;  
     }
-    
+
     /*Bloc populaires*/
     
     .populaires{   
-        width: 100%; 
-        border-radius: 0px;
+        width: 100%;
+        border: transparent;
+        background-color: transparent;
+      
     }
     .bloc2{
         height: auto;
-     
+        padding-top: ;
     }
-    .el1{
-        width: 90%;
-    }   
-    
+    .pop{
+        padding-top: 0;
+        pdding-bottom: 1%;
+    }
+    .el1{ 
+        border: 2px solid #F2F2F2 ;
+        border-radius: 15px 15px 15px 15px; 
+        box-shadow: 0 0 5px 0.2em #e2e2e2; 
+    }
     
     /*Bloc activités*/
     
     .activ{
         height: auto;  
-        margin-top: 10%; 
     }
     .bloc3{
         width: 100%;
-        height: auto;
-        display: flex; 
-        flex-direction: column;   
-    }
-    .ensemble1{
-        display:contents;
-        width: 100%;
-    }
-    .ensemble2{
-        display:contents;
-        width: 100%;
-    }
-    .grand{
-        width: 100%;
-        margin-top: 10%;
-    }
-    
-    .moyen{
-        margin-top: 10%;
-        width: 100%;
-        height: auto;
-        border: 1px solid transparent;
-        border-radius: 20px 20px 20px 20px;
-        box-shadow: 0px 10px 10px #F2F2F2;
-        margin-right: 3%;
-    }
-    .etroit{
-        margin-top: 10%;
-        width: 100%;
-        height: auto;
-        border: 1px solid transparent;
-        border-radius: 20px 20px 20px 20px;
-        box-shadow: 0px 10px 10px #F2F2F2;
-        margin-right: 3%;
-    }
-    .eglise{
-        margin-top: 10%;
-        width: 100%;
-        height: auto;
-        border: 1px solid transparent;
-        border-radius: 20px 20px 20px 20px;
-        box-shadow: 0px 10px 10px #F2F2F2;
-        margin-right: 3%;
-    }
-    .parc{
-        margin-top: 10%;
-        width: 100%;
-        height: auto;
-        border: 1px solid transparent;
-        border-radius: 20px 20px 20px 20px;
-        box-shadow: 0px 10px 10px #F2F2F2;
-        margin-right: 3%;
-    }
-    .grand img{
-        height: 145px;
-    }
-    .moyen img{
-        height: 145px;
-    }
-    .etroit img{
-     
-        height: 145px;
-    }
-    a img{
-        width: 100%;
+        height: auto; 
     }
     
     /*Footer*/
+
     footer{
         width: auto;
         height: auto;
-        display: flex;
-        flex-direction: column;
+    
         margin-left: 5%;
+        margin-right: 5%;
         margin-bottom: 5%;
     }
 }
