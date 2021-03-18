@@ -32,25 +32,27 @@ header{
     margin-left: 0%;
 }
 #trait_dessus{
-    border-top : 1px solid #0065FC;
+    border-top : 1px solid #0066FC;
     width : 120px;
     text-align: center;
+    padding-top: 10px;
 }
 .trait_dessus{
     text-decoration: none;
-    color: #0065FC;
+    color: #0066FC;
 }
 #trait_dessous{
     border-top : 1px solid transparent;
     width : 120px;
     text-align: center;
+    padding-top: 10px;
 }
 .trait_dessous{
     text-decoration: none;
     color: black; 
 }
 nav{
-    margin-top: 3%;
+    margin-top: 0%;
 }
 ul{
     padding-left: 0;
@@ -68,13 +70,16 @@ li{
     height: 20px;
     width: 125px;
 }
+li.sinscrire{
+    padding-top: 10px;
+}
 .inscrire{
-    text-decoration: #0065FC;
-    color: #0065FC;
+    text-decoration: #0066FC;
+    color: #0066FC;
 }
 .inscrire:hover{
     text-decoration: overline;
-    color: #0065FC;
+    color: #0066EC;
 }
 a{
     text-decoration: none;
@@ -115,8 +120,8 @@ form{
     align-items: center;
 }
 form i{
-    border: 1px solid #F2F2F2;
-    border-radius: 20px 0px 0px 20px;
+    border: 1px solid #F2F2F3;
+    border-radius: 15px 0px 0px 15px;
     background-color: #F2F2F2;
     padding: 1px 18px 1px 18px;
     color: black;
@@ -128,8 +133,8 @@ form i{
     align-items: center; 
 }
 .bouton{
-    border: 1px solid #0065FC ;
-    border-radius: 0px 30px 30px 0px;
+    border: 1px solid #0066FC ;
+    border-radius: 0px 15px 15px 0px;
     background-color: #0065FC;
     color: white;
     font-size: 0.8em;
@@ -141,7 +146,7 @@ form i{
     align-items: center;
 }
 .search{
-    border: 1px solid #F2F2F2;
+    border: 1px solid #F2F2F3;
     width: 184px;
     height: 50px;
     font-weight: bold;
@@ -176,7 +181,7 @@ h3{
     align-items: center;
 }
 .filtersDiv i{
-    border: 1px solid #DEEBFF;
+    border: 1px solid #dee6ff;
     border-radius: 20px;
     background-color: #DEEBFF;
     color: #0065FC;
@@ -186,9 +191,9 @@ h3{
     align-items: center;   
 }
 .filtersDiv{
-    border-top: 1px #DEEBFF solid ;
+    border-top: 1px #dee6ff solid ;
     border-bottom: 1px #DEEBFF solid ;
-    border-right: 1px #DEEBFF solid ;
+    border-right: 1px #DEFBFF solid ;
     border-radius: 20px;
     height: 40px;
     margin-left: 2%;
@@ -209,7 +214,7 @@ h3{
 /*Info*/
 
 .info i{
-    color: #0065FC;
+    color: #0066FC;
     border: 1px solid #DEEBFF;
     border-radius: 20px;
     width: 30px;
@@ -253,7 +258,7 @@ h4{
     font-weight: bolder;    
 }
 .hebergement{
-    border: 2px solid #F2F2F2;
+    border: 2px solid #f2f2f3;
     background-color: #F2F2F2;
     border-radius: 20px;
     width: 65%;
@@ -275,7 +280,7 @@ h4{
 .el{
     width: 28%;
     height: 200px;
-    border: white 1px solid;
+    border: #F9FBFC 1px solid;
     background-color: white;
     border-radius: 15px;
     padding: 3px 3px 0px 3px;
@@ -316,7 +321,12 @@ h4{
     margin-bottom: 3%;
 }
 .etoile{
-    color: #0065FC; 
+    color: #0066EC; 
+    display: flex;
+    flex-direction: row; 
+}
+.etoilegrise{
+    color: #D6D8D9;
     display: flex;
     flex-direction: row; 
 }
@@ -337,7 +347,7 @@ h4{
 .populaires{   
     width: 30%;
     height: auto;	
-    border: 2px solid #F2F2F2;
+    border: 2px solid #F2F2F3;
     background-color: #F2F2F2;
     border-radius: 20px;
     font-size: 1.2em;
@@ -380,7 +390,7 @@ h5{
 .el1{
     width: 80%;
     height: 135px;
-    border: 1px solid white;
+    border: 1px solid #F9FBFC;
     border-radius: 15px 15px 15px 15px;
     background-color: white;
     font-size: small;
@@ -427,7 +437,7 @@ h5{
 }
 .etoile1{
     padding-top: 20%;
-    color: #0065FC; 
+    color: #0066FC; 
     display: flex;
     flex-direction: row;
 }
@@ -660,13 +670,13 @@ footer{
         display: flex;
     }
     .partie1 i{
-        border: 1px solid #F2F2F2 ;
+        border: 1px solid #F2F2F3 ;
         border-radius: 15px 0px 0px 15px;
         background-color: #F2F2F2;
         padding: 1px 18px 1px 18px;
         color: black;
         font-weight: bolder;
-        width: 12px;
+        width: 14px;
         height: 47px;
         text-align: center; 
         display: flex;
@@ -674,8 +684,9 @@ footer{
     }
     .glass{
         border: 1px solid #F2F2F2;
-        width: 184px;
-        height: 50px;
+        border-right: 1px solid transparent;
+        width: 200px;
+        height: 51px;
         font-weight: bolder;
         color: black;
         padding: 1px 18px 1px 18px;
@@ -683,17 +694,18 @@ footer{
         align-items: center;
     }
     .partie2 i{
-        border: 1px solid #0065FC ;
+        border: 1px solid #0066FC ;
         border-radius: 15px 15px 15px 15px;
         background-color: #0065FC;
         padding: 1px 18px 1px 18px;
         color: white;
         font-weight: bolder;
-        width: 12px;
+        width: 14px;
         height: 47px;
         text-align: center; 
         display: flex;
         align-items: center; 
+        margin-left: -15%;
     }
 
 /*Filtres*/
@@ -929,54 +941,56 @@ footer{
     .recherche{
         display: none;
     }
-    /*Bouton variante*/
-    .variante{
-        display: flex;
-        margin-top: 5%;
-    }
-    form{
-        display: flex;
-        justify-content: center;  
-    }
-    .partie1{
-        display: flex;
-    }
-    .partie1 i{
-        border: 1px solid #F2F2F2 ;
-        border-radius: 15px 0px 0px 15px;
-        background-color: #F2F2F2;
-        padding: 1px 18px 1px 18px;
-        color: black;
-        font-weight: bolder;
-        width: 12px;
-        height: 47px;
-        text-align: center; 
-        display: flex;
-        align-items: center; 
-    }
-    .glass{
-        border: 1px solid #F2F2F2;
-        width: 184px;
-        height: 50px;
-        font-weight: bolder;
-        color: black;
-        padding: 1px 18px 1px 18px;
-        display: flex;
-        align-items: center;
-    }
-    .partie2 i{
-        border: 1px solid #0065FC ;
-        border-radius: 15px 15px 15px 15px;
-        background-color: #0065FC;
-        padding: 1px 18px 1px 18px;
-        color: white;
-        font-weight: bolder;
-        width: 12px;
-        height: 47px;
-        text-align: center; 
-        display: flex;
-        align-items: center; 
-    }
+        /*Bouton variante*/
+        .variante{
+            display: flex;
+            margin-top: 5%;
+        }
+        form{
+            display: flex;
+            justify-content: center;  
+        }
+        .partie1{
+            display: flex;
+        }
+        .partie1 i{
+            border: 1px solid #F2F2F3 ;
+            border-radius: 15px 0px 0px 15px;
+            background-color: #F2F2F2;
+            padding: 1px 18px 1px 18px;
+            color: black;
+            font-weight: bolder;
+            width: 14px;
+            height: 47px;
+            text-align: center; 
+            display: flex;
+            align-items: center; 
+        }
+        .glass{
+            border: 1px solid #F2F2F2;
+            border-right: 1px solid transparent;
+            width: 200px;
+            height: 51px;
+            font-weight: bolder;
+            color: black;
+            padding: 1px 18px 1px 18px;
+            display: flex;
+            align-items: center;
+        }
+        .partie2 i{
+            border: 1px solid #0066FC ;
+            border-radius: 15px 15px 15px 15px;
+            background-color: #0065FC;
+            padding: 1px 18px 1px 18px;
+            color: white;
+            font-weight: bolder;
+            width: 14px;
+            height: 47px;
+            text-align: center; 
+            display: flex;
+            align-items: center; 
+            margin-left: -15%;
+        }
 
 /*Filtres*/
 
@@ -1043,7 +1057,7 @@ footer{
     .hebergement{
         margin-top: 5%;
         padding-top: 3%;
-        border: 2px solid #F2F2F2;
+        border: 2px solid #F2F2F3;
         background-color: #F2F2F2;
         border-radius: 0;
         width: 100%;
